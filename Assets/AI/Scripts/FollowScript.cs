@@ -17,7 +17,7 @@ public class FollowScript : MonoBehaviour {
 	void Update () {
 		//We actually have a networked game, so we let's have the enemy chase the closest player
 		float closestDistance = float.MaxValue;
-		GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+		GameObject[] players = GameObject.FindGameObjectsWithTag("Untagged");
 		GameObject closestPlayer = null;
 
 		//C# has a foreach loop, can use it in this case
